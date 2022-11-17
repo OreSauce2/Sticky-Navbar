@@ -4,10 +4,11 @@ const bottomContainerEl = document.querySelector('.bottom-container');
 
 window.addEventListener('scroll', () => {
     if (
-        window.scrollY > 
-        bottomContainerEl.offsetTop - navbarEl.offsetHeight - 50
+        window.scrollY >
+        bottomContainerEl.offsetTop -
+        navbarEl.offsetHeight - 50
     ) {
-        navbarEl.cLassList.active.add('active');
+        navbarEl.classList.add('active');
     } else {
         navbarEl.classList.remove('active');
     }
